@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "appId": "58e2612c-6c64-42cb-aade-7e8761644aac",
+  "appDisplayName": "Power Platform 360",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "70272c31-9b28-e5fc-a5ae-82bb11a55b12",
+  "description": " ",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "9e4bd77f-10d3-468f-af1c-81fad66d61c3": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_powerplatformadminv2",
+      "displayName": "Power Platform for Admins V2",
+      "dataSources": [
+        "powerplatformadminv2"
+      ],
+      "authenticationType": "oauth2-auth",
+      "dataSets": {}
+    },
+    "dbec8b33-db40-42b9-8b4d-071130a93b97": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}
