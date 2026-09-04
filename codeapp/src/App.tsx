@@ -81,6 +81,7 @@ const NAVIGATION: NavigationItem[] = [
 ]
 
 const EMPTY_PROGRESS: InventoryLoadProgress = { phase: 'resources', loaded: 0 }
+const APP_VERSION = '1.0.1'
 
 function progressText(progress: InventoryLoadProgress): string {
   const count = progress.total
@@ -479,7 +480,10 @@ function App() {
         <header className="product-header">
           <div className="product-brand">
             <WorkloadIcon workload="overview" className="product-logo" />
-            <strong>Power Platform 360</strong>
+            <strong>
+              Power Platform 360
+              <span className="product-version">v{APP_VERSION}</span>
+            </strong>
             <span>Tenant inventory explorer</span>
           </div>
           <div className="product-status" aria-live="polite">

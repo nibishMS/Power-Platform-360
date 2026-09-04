@@ -73,7 +73,7 @@
           "email": "idcknowledgeeco@microsoft.com"
         }
       },
-      "host": "70272c31-9b28-e5fc-a5ae-82bb11a55b12.00.common.usa002.azure-apihub.net",
+      "host": "example.invalid",
       "basePath": "/apim/office365users",
       "schemes": [
         "https"
@@ -2022,10 +2022,10 @@
       }
     },
     "runtimeUrls": [
-      "https://70272c31-9b28-e5fc-a5ae-82bb11a55b12.00.common.usa002.azure-apihub.net/apim/office365users"
+      "https://example.invalid/apim/office365users"
     ],
-    "primaryRuntimeUrl": "https://70272c31-9b28-e5fc-a5ae-82bb11a55b12.00.common.usa002.azure-apihub.net/apim/office365users",
-    "doNotUseApiHubNetRuntimeUrl": "https://70272c31-9b28-e5fc-a5ae-82bb11a55b12.00.common.usa002.azure-apihub.net/apim/office365users",
+    "primaryRuntimeUrl": "https://example.invalid/apim/office365users",
+    "doNotUseApiHubNetRuntimeUrl": "https://example.invalid/apim/office365users",
     "metadata": {
       "source": "marketplace",
       "brandColor": "#FFFFFF",

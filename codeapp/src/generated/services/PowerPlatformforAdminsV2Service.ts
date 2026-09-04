@@ -7,6 +7,9 @@ import type { AdvisorActionRequest } from '../models/PowerPlatformforAdminsV2Mod
 import type { AdvisorActionResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { AdvisorRecommendationIEnumerableResponseWithContinuation } from '../models/PowerPlatformforAdminsV2Model';
 import type { AdvisorRecommendationResourceIEnumerableResponseWithContinuation } from '../models/PowerPlatformforAdminsV2Model';
+import type { AllocationAvailabilityResponseModel } from '../models/PowerPlatformforAdminsV2Model';
+import type { AllocationByEnvironmentModel } from '../models/PowerPlatformforAdminsV2Model';
+import type { AllocationPutRequestModel } from '../models/PowerPlatformforAdminsV2Model';
 import type { AllocationsByEnvironmentPatchRequestModelV1 } from '../models/PowerPlatformforAdminsV2Model';
 import type { AllocationsByEnvironmentResponseModelV1 } from '../models/PowerPlatformforAdminsV2Model';
 import type { ApplicationPackageContinuationResponse } from '../models/PowerPlatformforAdminsV2Model';
@@ -35,16 +38,22 @@ import type { CurrencyReportV2 } from '../models/PowerPlatformforAdminsV2Model';
 import type { DsrConversationTranscriptsResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { DsrFlowRunsResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { DsrPagedResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { EntitlementReservedResponseModel } from '../models/PowerPlatformforAdminsV2Model';
 import type { EnvironmentBackupPagedCollection } from '../models/PowerPlatformforAdminsV2Model';
-import type { EnvironmentCurrencyPagedCollection } from '../models/PowerPlatformforAdminsV2Model';
+import type { EnvironmentCurrencyResourceCollection } from '../models/PowerPlatformforAdminsV2Model';
+import type { EnvironmentEntitlementResponseModel } from '../models/PowerPlatformforAdminsV2Model';
+import type { EnvironmentEntitlementSnapshotResponseModelPagedResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { EnvironmentGroup } from '../models/PowerPlatformforAdminsV2Model';
 import type { EnvironmentGroupResponseWithOdataContinuation } from '../models/PowerPlatformforAdminsV2Model';
-import type { EnvironmentLanguagePagedCollection } from '../models/PowerPlatformforAdminsV2Model';
+import type { EnvironmentLanguageResourceCollection } from '../models/PowerPlatformforAdminsV2Model';
 import type { EnvironmentList } from '../models/PowerPlatformforAdminsV2Model';
 import type { EnvironmentPagedCollection } from '../models/PowerPlatformforAdminsV2Model';
 import type { EnvironmentResponse } from '../models/PowerPlatformforAdminsV2Model';
-import type { EnvironmentTemplatePagedCollection } from '../models/PowerPlatformforAdminsV2Model';
+import type { EnvironmentTemplateResourceCollection } from '../models/PowerPlatformforAdminsV2Model';
 import type { FinOpsAdminSettingsResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { FinOpsLicenseSummaryV2Response } from '../models/PowerPlatformforAdminsV2Model';
+import type { FinOpsPropertiesResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { FinOpsVersionsResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { FlowAction } from '../models/PowerPlatformforAdminsV2Model';
 import type { FlowRun } from '../models/PowerPlatformforAdminsV2Model';
 import type { ForceFailoverRequest } from '../models/PowerPlatformforAdminsV2Model';
@@ -63,13 +72,14 @@ import type { IsvContractResponseModelResponseWithOdataContinuation } from '../m
 import type { ListConnectionsResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { ListConnectorsResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { ListPolicyResponse } from '../models/PowerPlatformforAdminsV2Model';
-import type { LocationPagedCollection } from '../models/PowerPlatformforAdminsV2Model';
 import type { MCPQueryRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { MCPQueryResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { MgGovODataResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { ModifyEnvironmentSkuRequest } from '../models/PowerPlatformforAdminsV2Model';
+import type { NeptuneOperationResult } from '../models/PowerPlatformforAdminsV2Model';
 import type { NewWebsiteRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { ODataListWebsitesDto } from '../models/PowerPlatformforAdminsV2Model';
+import type { OperationErrorsResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { OperationExecutionResult } from '../models/PowerPlatformforAdminsV2Model';
 import type { OperationExecutionResultPagedCollection } from '../models/PowerPlatformforAdminsV2Model';
 import type { OperationResponse } from '../models/PowerPlatformforAdminsV2Model';
@@ -82,10 +92,14 @@ import type { PowerApp } from '../models/PowerPlatformforAdminsV2Model';
 import type { PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceFlowContextRecord } from '../models/PowerPlatformforAdminsV2Model';
 import type { PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceRecord } from '../models/PowerPlatformforAdminsV2Model';
 import type { PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceUserContextRecord } from '../models/PowerPlatformforAdminsV2Model';
+import type { ProvisioningLocations } from '../models/PowerPlatformforAdminsV2Model';
 import type { ReassignBotRequestBody } from '../models/PowerPlatformforAdminsV2Model';
+import type { ResetRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { ResourceArrayPowerApp } from '../models/PowerPlatformforAdminsV2Model';
 import type { ResourceQueryRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { ResourceQueryResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { ResourceThresholdModel } from '../models/PowerPlatformforAdminsV2Model';
+import type { ResourceThresholdRequestModel } from '../models/PowerPlatformforAdminsV2Model';
 import type { RestoreRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { RoleAssignmentRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { RoleAssignmentResponse } from '../models/PowerPlatformforAdminsV2Model';
@@ -99,10 +113,14 @@ import type { SetAdminConsentBypassRequest } from '../models/PowerPlatformforAdm
 import type { SiteSecurityResult } from '../models/PowerPlatformforAdminsV2Model';
 import type { SiteSecurityScore } from '../models/PowerPlatformforAdminsV2Model';
 import type { SslBindingThumbprintDTO } from '../models/PowerPlatformforAdminsV2Model';
-import type { StateChangeRequest } from '../models/PowerPlatformforAdminsV2Model';
 import type { StorageWarningThresholdsDocument } from '../models/PowerPlatformforAdminsV2Model';
 import type { TenantApplicationPackageContinuationResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { TenantCapacityDetailsModel } from '../models/PowerPlatformforAdminsV2Model';
+import type { TenantEntitlementLicenseTrendResponseModelPagedResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { TenantEntitlementResponseModel } from '../models/PowerPlatformforAdminsV2Model';
+import type { TenantEnvironmentResourceSnapshotResponseModelPagedResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { TenantResourceResponseModelPagedResponse } from '../models/PowerPlatformforAdminsV2Model';
+import type { TenantUserResponseModelPagedResponse } from '../models/PowerPlatformforAdminsV2Model';
 import type { TestRun } from '../models/PowerPlatformforAdminsV2Model';
 import type { TestRunCollection } from '../models/PowerPlatformforAdminsV2Model';
 import type { TestSet } from '../models/PowerPlatformforAdminsV2Model';
@@ -112,6 +130,7 @@ import type { TpsInstallRequestPayload } from '../models/PowerPlatformforAdminsV
 import type { UpdateFinOpsAdminSettingsRequestBody } from '../models/PowerPlatformforAdminsV2Model';
 import type { UserPerFlowCapacitySourceTenantContextSummaryRecord } from '../models/PowerPlatformforAdminsV2Model';
 import type { WebApplicationFirewallConfiguration } from '../models/PowerPlatformforAdminsV2Model';
+import type { WebApplicationFirewallPolicySettings } from '../models/PowerPlatformforAdminsV2Model';
 import type { WebApplicationFirewallRules } from '../models/PowerPlatformforAdminsV2Model';
 import type { WebApplicationFirewallStatus } from '../models/PowerPlatformforAdminsV2Model';
 import type { WebsiteDto } from '../models/PowerPlatformforAdminsV2Model';
@@ -465,6 +484,23 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
+   * Download Agent Channel Manifest
+   * Downloads the channel manifest package for the specified agent and channel as a zip file. Currently only the "M365" channel is supported.
+   */
+  public static async DownloadAgentChannelManifest(EnvironmentId: string, AgentId: string, ChannelName: string, api_version: string, includeAgentSchema?: boolean): Promise<IOperationResult<string>> {
+    const params: { EnvironmentId: string, AgentId: string, ChannelName: string, "api-version": string, includeAgentSchema?: boolean } = { EnvironmentId, AgentId, ChannelName, "api-version": api_version, includeAgentSchema };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ EnvironmentId: string, AgentId: string, ChannelName: string, "api-version": string, includeAgentSchema?: boolean }, string>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'DownloadAgentChannelManifest',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
    * Delete a bot in Copilot Studio
    * Delete a bot.
    */
@@ -720,6 +756,74 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
+   * Get Finance and Operations environment properties
+   * Retrieves Finance and Operations environment properties such as AOS counts, deployment type, and demo dataset.
+   */
+  public static async GetFinOpsProperties(environmentId: string, api_version: string): Promise<IOperationResult<FinOpsPropertiesResponse>> {
+    const params: { environmentId: string, "api-version": string } = { environmentId, "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string }, FinOpsPropertiesResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetFinOpsProperties',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get available Finance and Operations versions
+   * Retrieves the list of Finance and Operations application versions available for an environment.
+   */
+  public static async GetFinOpsVersions(environmentId: string, api_version: string): Promise<IOperationResult<FinOpsVersionsResponse>> {
+    const params: { environmentId: string, "api-version": string } = { environmentId, "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string }, FinOpsVersionsResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetFinOpsVersions',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Apply a Finance and Operations version
+   * Applies the specified Finance and Operations application version to an environment as a long-running operation.
+   */
+  public static async ApplyFinOpsVersion(environmentId: string, version: string, api_version: string): Promise<IOperationResult<void>> {
+    const params: { environmentId: string, version: string, "api-version": string } = { environmentId, version, "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, version: string, "api-version": string }, void>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'ApplyFinOpsVersion',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get Finance and Operations operation errors
+   * Retrieves recent operation errors for a Finance and Operations environment.
+   */
+  public static async GetFinOpsOperationErrors(environmentId: string, api_version: string, maxResults?: number): Promise<IOperationResult<OperationErrorsResponse>> {
+    const params: { environmentId: string, "api-version": string, maxResults?: number } = { environmentId, "api-version": api_version, maxResults };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string, maxResults?: number }, OperationErrorsResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetFinOpsOperationErrors',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
    * Create environment management settings
    * Ability to Create environment management settings.
    */
@@ -771,7 +875,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Creates a backup of the specified environment (Preview)
+   * Creates a backup of the specified environment
    * Creates a backup of the specified environment.
    */
   public static async CreateEnvironmentBackup(environmentId: string, api_version: string, body?: CreateBackupRequest): Promise<IOperationResult<void>> {
@@ -788,7 +892,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Gets the backups for the specified environment (Preview)
+   * Gets the list of backups for the specified environment
    * Gets the backups for the specified environment.
    */
   public static async GetEnvironmentBackups(environmentId: string, api_version: string): Promise<IOperationResult<EnvironmentBackupPagedCollection>> {
@@ -805,7 +909,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Deletes the specified backup (Preview)
+   * Deletes the specified backup
    * Deletes the specified backup.
    */
   public static async DeleteEnvironmentBackup(environmentId: string, backupId: string, api_version: string): Promise<IOperationResult<void>> {
@@ -822,7 +926,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Gets business continuity snapshot for environment (Preview)
+   * Gets the full business continuity state snapshot for the specified environment
    * Gets business continuity snapshot including LastSyncTime.
    */
   public static async GetBusinessContinuityStateFullSnapshot(environmentId: string, api_version: string): Promise<IOperationResult<BusinessContinuityStateFullSnapshot>> {
@@ -839,24 +943,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Disables the specified environment (Preview)
-   * Disables the specified environment.
-   */
-  public static async DisableEnvironment(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: StateChangeRequest): Promise<IOperationResult<void>> {
-    const params: { environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: StateChangeRequest } = { environmentId, "api-version": api_version, ValidateOnly, ValidateProperties, body };
-    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: StateChangeRequest }, void>(
-      {
-        connectorOperation: {
-          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
-          operationName: 'DisableEnvironment',
-          parameters: params
-        },
-      });
-    return result;
-  }
-
-  /**
-   * Disables disaster recovery on the specified environment (Preview)
+   * Disables disaster recovery on the specified environment
    * Disables disaster recovery on the specified environment.
    */
   public static async DisableDisasterRecovery(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -873,7 +960,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Performs DR Drill for the specified environment (Preview)
+   * Performs DR Drill for the specified environment
    * Performs DR Drill for the specified environment.
    */
   public static async PerformDRDrill(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -890,24 +977,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Enables the specified environment (Preview)
-   * Enables the specified environment.
-   */
-  public static async EnableEnvironment(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: StateChangeRequest): Promise<IOperationResult<void>> {
-    const params: { environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: StateChangeRequest } = { environmentId, "api-version": api_version, ValidateOnly, ValidateProperties, body };
-    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: StateChangeRequest }, void>(
-      {
-        connectorOperation: {
-          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
-          operationName: 'EnableEnvironment',
-          parameters: params
-        },
-      });
-    return result;
-  }
-
-  /**
-   * Enables disaster recovery on the specified environment (Preview)
+   * Enables disaster recovery on the specified environment
    * Enables disaster recovery on the specified environment.
    */
   public static async EnableDisasterRecovery(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -924,7 +994,24 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Force failover for the specified environment (Preview)
+   * Performs failback for the specified environment
+   * Performs failback for the specified environment, switching it back from its current (paired) region to its original primary region. This is the inverse of force failover.
+   */
+  public static async PerformFailback(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
+    const params: { environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string } = { environmentId, "api-version": api_version, ValidateOnly, ValidateProperties };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string }, void>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'PerformFailback',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Performs force failover for the specified environment
    * Fails over environment to its paired region as of LastSyncTime.
    */
   public static async PerformForceFailover(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: ForceFailoverRequest): Promise<IOperationResult<void>> {
@@ -941,7 +1028,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Disables managed governance for the specified environment (Preview)
+   * Disables managed governance for the specified environment
    * Disables managed governance for the specified environment.
    */
   public static async DisableManagedEnvironment(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -958,7 +1045,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Enables managed governance for the specified environment (Preview)
+   * Enables managed governance for the specified environment
    * Enables managed governance for the specified environment.
    */
   public static async EnableManagedEnvironment(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -975,8 +1062,8 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Modifies sku for the specified environment (Preview)
-   * Modifies sku for the specified environment.
+   * Modifies SKU for the specified environment
+   * Modifies SKU for the specified environment.
    */
   public static async ModifyEnvironmentSku(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: ModifyEnvironmentSkuRequest): Promise<IOperationResult<void>> {
     const params: { environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: ModifyEnvironmentSkuRequest } = { environmentId, "api-version": api_version, ValidateOnly, ValidateProperties, body };
@@ -992,7 +1079,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Lists the environment lifecycle operations for a specific environment (Preview)
+   * Gets the list of environment lifecycle operations for a specific environment
    * Lists the environment lifecycle operations for a specific environment.
    */
   public static async GetOperationsForEnvironment(environmentId: string, api_version: string, limit?: string, continuationToken?: string): Promise<IOperationResult<OperationExecutionResultPagedCollection>> {
@@ -1009,7 +1096,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Recover the deleted environment (Preview)
+   * Recovers the deleted environment
    * Recover the deleted environment.
    */
   public static async RecoverEnvironment(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -1026,7 +1113,24 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Gets copy target candidate environments (Preview)
+   * Resets the environment
+   * Resets the specified environment.
+   */
+  public static async ResetEnvironment(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: ResetRequest): Promise<IOperationResult<void>> {
+    const params: { environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: ResetRequest } = { environmentId, "api-version": api_version, ValidateOnly, ValidateProperties, body };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string, ValidateOnly?: boolean, ValidateProperties?: string, body?: ResetRequest }, void>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'ResetEnvironment',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Gets the list of environments that can be copied as the target environment
    * Gets the list of environments that can be copied as the target environment.
    */
   public static async GetEnvironmentCopyCandidates(sourceEnvironmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<EnvironmentPagedCollection>> {
@@ -1043,7 +1147,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Gets restore candidate environments (Preview)
+   * Gets the list of restore candidates for the specified environment
    * Gets the list of restore candidates when restore from the specified environment.
    */
   public static async GetRestoreCandidates(sourceEnvironmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<EnvironmentPagedCollection>> {
@@ -1060,7 +1164,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Copy the environment from the specified source to the target (Preview)
+   * Copy the environment from the specified source to the target
    * Copy the environment from the specified source to the target.
    */
   public static async CopyEnvironment(targetEnvironmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: CopyRequest): Promise<IOperationResult<void>> {
@@ -1077,7 +1181,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Gets the status of an environment-scoped lifecycle operation (Preview)
+   * Gets the status of a lifecycle operation scoped to a specific environment
    * Gets the status of an environment lifecycle operation scoped under a specific environment, enabling environment-level authorization on the operation lookup.
    */
   public static async GetEnvironmentOperationByID(targetEnvironmentId: string, operationId: string, api_version: string): Promise<IOperationResult<OperationExecutionResult>> {
@@ -1094,7 +1198,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Restores the specified environment to a previous backup (Preview)
+   * Restores the specified environment to a previous backup
    * Restores the specified environment to a previous backup.
    */
   public static async RestoreEnvironment(targetEnvironmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string, body?: RestoreRequest): Promise<IOperationResult<void>> {
@@ -1111,7 +1215,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Gets the status of an environment lifecycle operation (Preview)
+   * Gets the status of an environment lifecycle operation
    * Gets the status of an environment lifecycle operation.
    */
   public static async GetOperationByID(operationId: string, api_version: string): Promise<IOperationResult<OperationExecutionResult>> {
@@ -1165,9 +1269,9 @@ export class PowerPlatformforAdminsV2Service {
    * Gets the list of supported locations for environment provisioning
    * Gets the list of supported locations for environment provisioning.
    */
-  public static async GetSupportedLocations(api_version: string): Promise<IOperationResult<LocationPagedCollection>> {
+  public static async GetSupportedLocations(api_version: string): Promise<IOperationResult<ProvisioningLocations>> {
     const params: { "api-version": string } = { "api-version": api_version };
-    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string }, LocationPagedCollection>(
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string }, ProvisioningLocations>(
       {
         connectorOperation: {
           tableName: PowerPlatformforAdminsV2Service.dataSourceName,
@@ -1179,12 +1283,12 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Retrieves available currencies for environment provisioning in a location
+   * Gets the list of available currencies for provisioning in a location
    * Retrieves available currencies for environment provisioning in a location.
    */
-  public static async GetProvisioningCurrencies(location: string, api_version: string): Promise<IOperationResult<EnvironmentCurrencyPagedCollection>> {
+  public static async GetProvisioningCurrencies(location: string, api_version: string): Promise<IOperationResult<EnvironmentCurrencyResourceCollection>> {
     const params: { location: string, "api-version": string } = { location, "api-version": api_version };
-    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ location: string, "api-version": string }, EnvironmentCurrencyPagedCollection>(
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ location: string, "api-version": string }, EnvironmentCurrencyResourceCollection>(
       {
         connectorOperation: {
           tableName: PowerPlatformforAdminsV2Service.dataSourceName,
@@ -1196,12 +1300,12 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Retrieves available languages for environment provisioning in a location
+   * Gets the list of available languages for provisioning in a location
    * Retrieves available languages for environment provisioning in a location.
    */
-  public static async GetProvisioningLanguages(location: string, api_version: string): Promise<IOperationResult<EnvironmentLanguagePagedCollection>> {
+  public static async GetProvisioningLanguages(location: string, api_version: string): Promise<IOperationResult<EnvironmentLanguageResourceCollection>> {
     const params: { location: string, "api-version": string } = { location, "api-version": api_version };
-    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ location: string, "api-version": string }, EnvironmentLanguagePagedCollection>(
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ location: string, "api-version": string }, EnvironmentLanguageResourceCollection>(
       {
         connectorOperation: {
           tableName: PowerPlatformforAdminsV2Service.dataSourceName,
@@ -1213,12 +1317,12 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Retrieves available templates for environment provisioning in a location
+   * Gets the list of available templates for provisioning in a location
    * Retrieves available templates for environment provisioning in a location.
    */
-  public static async GetProvisioningTemplates(location: string, api_version: string): Promise<IOperationResult<EnvironmentTemplatePagedCollection>> {
+  public static async GetProvisioningTemplates(location: string, api_version: string): Promise<IOperationResult<EnvironmentTemplateResourceCollection>> {
     const params: { location: string, "api-version": string } = { location, "api-version": api_version };
-    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ location: string, "api-version": string }, EnvironmentTemplatePagedCollection>(
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ location: string, "api-version": string }, EnvironmentTemplateResourceCollection>(
       {
         connectorOperation: {
           tableName: PowerPlatformforAdminsV2Service.dataSourceName,
@@ -1400,7 +1504,7 @@ export class PowerPlatformforAdminsV2Service {
   }
 
   /**
-   * Deletes the specified environment by ID (Preview)
+   * Deletes the specified environment by ID
    * Deletes the specified environment by ID.
    */
   public static async DeleteEnvironmentByID(environmentId: string, api_version: string, ValidateOnly?: boolean, ValidateProperties?: string): Promise<IOperationResult<void>> {
@@ -1750,6 +1854,295 @@ export class PowerPlatformforAdminsV2Service {
         connectorOperation: {
           tableName: PowerPlatformforAdminsV2Service.dataSourceName,
           operationName: 'GetCrossTenantConnectionReport',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Set the allocations for the scope
+   * Ability to Set the allocations for the scope.
+   */
+  public static async PutAllocationsV2(api_version: string, body?: AllocationPutRequestModel): Promise<IOperationResult<NeptuneOperationResult>> {
+    const params: { "api-version": string, body?: AllocationPutRequestModel } = { "api-version": api_version, body };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string, body?: AllocationPutRequestModel }, NeptuneOperationResult>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'PutAllocationsV2',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get the entitlements available to be allocated for the scope
+   * Ability to Get the entitlements available to be allocated for the scope.
+   */
+  public static async GetAllocationsAvailabilityV2(api_version: string, $filter?: string): Promise<IOperationResult<AllocationAvailabilityResponseModel>> {
+    const params: { "api-version": string, $filter?: string } = { "api-version": api_version, $filter };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string, $filter?: string }, AllocationAvailabilityResponseModel>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetAllocationsAvailabilityV2',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get the reserved entitlements for the scope
+   * Ability to Get the reserved entitlements for the scope.
+   */
+  public static async GetManyEntitlementsReservedV2(api_version: string, $filter?: string): Promise<IOperationResult<EntitlementReservedResponseModel[]>> {
+    const params: { "api-version": string, $filter?: string } = { "api-version": api_version, $filter };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string, $filter?: string }, EntitlementReservedResponseModel[]>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetManyEntitlementsReservedV2',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get the entitlement details for the tenant
+   * Ability to Get the entitlement details for the tenant.
+   */
+  public static async GetEntitlement(entitlementId: string, api_version: string): Promise<IOperationResult<TenantEntitlementResponseModel>> {
+    const params: { entitlementId: string, "api-version": string } = { entitlementId, "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, "api-version": string }, TenantEntitlementResponseModel>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetEntitlement',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get environment resource entitlement snapshots for an entitlement
+   * Ability to Get environment resource entitlement snapshots for an entitlement.
+   */
+  public static async GetEnvironmentResources(entitlementId: string, environmentId: string, fromDate: string, toDate: string, api_version: string, searchRequest?: string, includeFields?: string, orderbyConsumed?: string, continuationToken?: string): Promise<IOperationResult<EnvironmentEntitlementSnapshotResponseModelPagedResponse>> {
+    const params: { entitlementId: string, environmentId: string, fromDate: string, toDate: string, "api-version": string, searchRequest?: string, includeFields?: string, orderbyConsumed?: string, continuationToken?: string } = { entitlementId, environmentId, fromDate, toDate, "api-version": api_version, searchRequest, includeFields, orderbyConsumed, continuationToken };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, environmentId: string, fromDate: string, toDate: string, "api-version": string, searchRequest?: string, includeFields?: string, orderbyConsumed?: string, continuationToken?: string }, EnvironmentEntitlementSnapshotResponseModelPagedResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetEnvironmentResources',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get the license trends for the tenant for the specified entitlement
+   * Ability to Get the license trends for the tenant for the specified entitlement.
+   */
+  public static async GetTenantLicenseTrends(entitlementId: string, fromDate: string, toDate: string, api_version: string, $top?: number, $filter?: string): Promise<IOperationResult<TenantEntitlementLicenseTrendResponseModelPagedResponse>> {
+    const params: { entitlementId: string, fromDate: string, toDate: string, "api-version": string, $top?: number, $filter?: string } = { entitlementId, fromDate, toDate, "api-version": api_version, $top, $filter };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, fromDate: string, toDate: string, "api-version": string, $top?: number, $filter?: string }, TenantEntitlementLicenseTrendResponseModelPagedResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetTenantLicenseTrends',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get tenant resources for an entitlement across all environments
+   * Ability to Get tenant resources for an entitlement across all environments.
+   */
+  public static async GetTenantResourcesAcrossEnvironments(entitlementId: string, fromDate: string, toDate: string, api_version: string, pageSize?: number, continuationToken?: string): Promise<IOperationResult<TenantEnvironmentResourceSnapshotResponseModelPagedResponse>> {
+    const params: { entitlementId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, continuationToken?: string } = { entitlementId, fromDate, toDate, "api-version": api_version, pageSize, continuationToken };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, continuationToken?: string }, TenantEnvironmentResourceSnapshotResponseModelPagedResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetTenantResourcesAcrossEnvironments',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get tenant user consumption by entitlement and resource ID
+   * Ability to Get tenant user consumption by entitlement and resource ID.
+   */
+  public static async GetTenantUserConsumptionByResource(entitlementId: string, resourceId: string, fromDate: string, toDate: string, api_version: string, pageSize?: number, searchRequest?: string, continuationToken?: string): Promise<IOperationResult<TenantUserResponseModelPagedResponse>> {
+    const params: { entitlementId: string, resourceId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, searchRequest?: string, continuationToken?: string } = { entitlementId, resourceId, fromDate, toDate, "api-version": api_version, pageSize, searchRequest, continuationToken };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, resourceId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, searchRequest?: string, continuationToken?: string }, TenantUserResponseModelPagedResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetTenantUserConsumptionByResource',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get all resource thresholds for the specified entitlement
+   * Ability to Get all resource thresholds for the specified entitlement.
+   */
+  public static async GetAllResourceThresholds(entitlementId: string, api_version: string): Promise<IOperationResult<ResourceThresholdModel[]>> {
+    const params: { entitlementId: string, "api-version": string } = { entitlementId, "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, "api-version": string }, ResourceThresholdModel[]>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetAllResourceThresholds',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get the list of tenant users entitlement snapshot for the specified entitlement
+   * Ability to Get the list of tenant users entitlement snapshot for the specified entitlement.
+   */
+  public static async GetTenantUsers(entitlementId: string, fromDate: string, toDate: string, api_version: string, pageSize?: number, searchRequest?: string, orderbyConsumed?: string, continuationToken?: string): Promise<IOperationResult<TenantUserResponseModelPagedResponse>> {
+    const params: { entitlementId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, searchRequest?: string, orderbyConsumed?: string, continuationToken?: string } = { entitlementId, fromDate, toDate, "api-version": api_version, pageSize, searchRequest, orderbyConsumed, continuationToken };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, searchRequest?: string, orderbyConsumed?: string, continuationToken?: string }, TenantUserResponseModelPagedResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetTenantUsers',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get resource consumption by entitlement and user ID
+   * Ability to Get resource consumption by entitlement and user ID.
+   */
+  public static async GetTenantResourceConsumptionByUser(entitlementId: string, userId: string, fromDate: string, toDate: string, api_version: string, pageSize?: number, searchRequest?: string, continuationToken?: string): Promise<IOperationResult<TenantResourceResponseModelPagedResponse>> {
+    const params: { entitlementId: string, userId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, searchRequest?: string, continuationToken?: string } = { entitlementId, userId, fromDate, toDate, "api-version": api_version, pageSize, searchRequest, continuationToken };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ entitlementId: string, userId: string, fromDate: string, toDate: string, "api-version": string, pageSize?: number, searchRequest?: string, continuationToken?: string }, TenantResourceResponseModelPagedResponse>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetTenantResourceConsumptionByUser',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get the entitlements for the tenant by environment
+   * Ability to Get the entitlements for the tenant by environment.
+   */
+  public static async GetManyEnvironmentEntitlements(environmentId: string, api_version: string, $filter?: string): Promise<IOperationResult<EnvironmentEntitlementResponseModel[]>> {
+    const params: { environmentId: string, "api-version": string, $filter?: string } = { environmentId, "api-version": api_version, $filter };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string, $filter?: string }, EnvironmentEntitlementResponseModel[]>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetManyEnvironmentEntitlements',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Create or update the resource threshold for an environment resource
+   * Ability to Create or update the resource threshold for an environment resource.
+   */
+  public static async UpsertResourceThreshold(environmentId: string, entitlementId: string, resourceId: string, api_version: string, body?: ResourceThresholdRequestModel): Promise<IOperationResult<ResourceThresholdModel>> {
+    const params: { environmentId: string, entitlementId: string, resourceId: string, "api-version": string, body?: ResourceThresholdRequestModel } = { environmentId, entitlementId, resourceId, "api-version": api_version, body };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, entitlementId: string, resourceId: string, "api-version": string, body?: ResourceThresholdRequestModel }, ResourceThresholdModel>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'UpsertResourceThreshold',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get FinOps license summary (V2) for the tenant
+   * Ability to Get FinOps license summary (V2) for the tenant.
+   */
+  public static async GetFinOpsLicenseSummaryV2(api_version: string): Promise<IOperationResult<FinOpsLicenseSummaryV2Response>> {
+    const params: { "api-version": string } = { "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string }, FinOpsLicenseSummaryV2Response>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetFinOpsLicenseSummaryV2',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get currency allocations and enforcement rules for all environments
+   * Ability to Get currency allocations and enforcement rules for all environments.
+   */
+  public static async ListAllocationsByEnvironment(api_version: string): Promise<IOperationResult<AllocationByEnvironmentModel[]>> {
+    const params: { "api-version": string } = { "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string }, AllocationByEnvironmentModel[]>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'ListAllocationsByEnvironment',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Update currency allocations and enforcement rules for an environment
+   * Ability to Update currency allocations and enforcement rules for an environment.
+   */
+  public static async UpdateAllocationsByEnvironment(api_version: string, body?: AllocationByEnvironmentModel): Promise<IOperationResult<AllocationByEnvironmentModel>> {
+    const params: { "api-version": string, body?: AllocationByEnvironmentModel } = { "api-version": api_version, body };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ "api-version": string, body?: AllocationByEnvironmentModel }, AllocationByEnvironmentModel>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'UpdateAllocationsByEnvironment',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Get currency allocations and enforcement rules for an environment
+   * Ability to Get currency allocations and enforcement rules for an environment.
+   */
+  public static async GetAllocationsByEnvironment(environmentId: string, api_version: string): Promise<IOperationResult<AllocationByEnvironmentModel>> {
+    const params: { environmentId: string, "api-version": string } = { environmentId, "api-version": api_version };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, "api-version": string }, AllocationByEnvironmentModel>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'GetAllocationsByEnvironment',
           parameters: params
         },
       });
@@ -2940,6 +3333,23 @@ export class PowerPlatformforAdminsV2Service {
         connectorOperation: {
           tableName: PowerPlatformforAdminsV2Service.dataSourceName,
           operationName: 'UpdateSiteVisibility',
+          parameters: params
+        },
+      });
+    return result;
+  }
+
+  /**
+   * Update web application firewall policy settings on a Power Pages website
+   * Updates policy-level web application firewall settings (enforcement mode and JavaScript/CAPTCHA challenge cookie lifetimes) on the given website. Only the fields provided in the request body are applied; omitted fields are left unchanged.
+   */
+  public static async UpdateWafPolicySettings(environmentId: string, id: string, api_version: string, body: WebApplicationFirewallPolicySettings): Promise<IOperationResult<WebApplicationFirewallPolicySettings>> {
+    const params: { environmentId: string, id: string, "api-version": string, body: WebApplicationFirewallPolicySettings } = { environmentId, id, "api-version": api_version, body };
+    const result = await PowerPlatformforAdminsV2Service.client.executeAsync<{ environmentId: string, id: string, "api-version": string, body: WebApplicationFirewallPolicySettings }, WebApplicationFirewallPolicySettings>(
+      {
+        connectorOperation: {
+          tableName: PowerPlatformforAdminsV2Service.dataSourceName,
+          operationName: 'UpdateWafPolicySettings',
           parameters: params
         },
       });

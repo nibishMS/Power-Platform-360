@@ -1,10 +1,9 @@
 {
   "version": "1.0",
-  "appId": "58e2612c-6c64-42cb-aade-7e8761644aac",
   "appDisplayName": "Power Platform 360",
   "region": "prod",
   "appType": "CodeApp",
-  "environmentId": "70272c31-9b28-e5fc-a5ae-82bb11a55b12",
+  "environmentId": "",
   "description": " ",
   "buildPath": "./dist",
   "buildEntryPoint": "index.html",
